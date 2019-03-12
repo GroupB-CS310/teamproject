@@ -5,6 +5,6 @@ public class Main {
     public static void main(String[] args) {
         
         PlinkoMasterParser p = new PlinkoMasterParser();
-        String s = p.parse("11052497");
+        String s = p.parse("255071234892367721415289");
     }
 }
