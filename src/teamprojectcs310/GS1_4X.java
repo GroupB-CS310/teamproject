@@ -40,5 +40,291 @@ public class GS1_4X extends GS1 {
         
 
     }
+   
+    public Object parse400(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "ORDER NUMBER");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+    public Object parse400eol(String element){
+        return ( parse400(element));
+    }
+    
+    //
+    
+    public Object parse401(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "GINC");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+    public Object parse401eol(String element){
+        return ( parse401(element));
+    }
+    
+    //
+    
+    public Object parse402(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "GSIN");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+        
+    //
+        
+    public Object parse403(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "ROUTE");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+        
+    public Object parse403eol(String element){
+        return ( parse403(element));
+    }
+    
+    //
+             
+    public Object parse410(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "SHIP TO LOC");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+    //
+                 
+    public Object parse411(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "BILL TO");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+    //
+                 
+    public Object parse412(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "PURCHASE FROM");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+    //
+                     
+    public Object parse413(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "SHIP FOR LOC");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+    //
+    
+                     
+    public Object parse414(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "LOC No");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+    //
+                     
+    public Object parse415(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "PAY TO");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+    //
+                     
+    public Object parse416(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "PROD/SERV LOC");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+    //
+            
+    public Object parse420(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "SHIP TO POST");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+        
+    public Object parse420eol(String element){
+        return ( parse420(element));
+    }
+    
+    //
+    
+    public Object parse421(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "SHIP TO POST");
+        //N3+N3+X..9
+        output.put("ai", element.substring(0, 5) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+        
+    public Object parse421eol(String element){
+        return ( parse421(element));
+    }
+    
+    //
+     
+    public Object parse422(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "ORIGIN");
+        //N3+N3+X..9
+        output.put("ai", element.substring(0, 5) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+    //
+        
+    public Object parse423(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "COUNTRY - INITIAL PROCESS");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+        
+    public Object parse423eol(String element){
+        return ( parse423(element));
+    }
+    
+    //
+    
+    public Object parse424(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "COUNTRY - PROCESS");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+    //
+            
+    public Object parse425(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "COUNTRY - DISASSEMBLY");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+        
+    public Object parse425eol(String element){
+        return ( parse425(element));
+    }
+    
+
     
 }
