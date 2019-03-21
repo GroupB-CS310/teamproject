@@ -358,5 +358,6 @@ public class GS1_4X extends GS1 {
     public Object parse427eol(String element){
         return ( parse427(element));
     }
+
     
 }
