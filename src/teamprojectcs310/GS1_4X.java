@@ -325,6 +325,38 @@ public class GS1_4X extends GS1 {
         return ( parse425(element));
     }
     
-
+    //
+                
+    public Object parse426(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "COUNTRY - FULL PROCESS");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+    //
+                
+    public Object parse427(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "ORIGIN SUBDIVISION");
+        output.put("ai", element.substring(0, 2) );
+        output.put("number", element.substring(2 ) );
+        output.put("element", element);
+        
+        return output;
+    }
+        
+    public Object parse427eol(String element){
+        return ( parse427(element));
+    }
     
 }
