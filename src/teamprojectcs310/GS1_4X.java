@@ -15,6 +15,7 @@ public class GS1_4X extends GS1 {
         super.matchers.put( "401", Pattern.compile("^401(.){1,30}[%\\x1D]") );          // AI #401 
         super.matchers.put( "401eol", Pattern.compile("^401(.){1,30}$") );              // AI #401 (eol)
         super.matchers.put( "402", Pattern.compile("^402[0-9]{17}"));                   // AI #402
+        super.matchers.put( "402eol", Pattern.compile("^402[0-9]{17}$") );              // AI #402 (eol)
         super.matchers.put( "403", Pattern.compile("^403(.){1,30}[%\\x1D]") );          // AI #403
         super.matchers.put( "403eol", Pattern.compile("^403(.){1,30}$") );              // AI #403 (eol)
         super.matchers.put( "410", Pattern.compile("^410[0-9]{13}") );                  // AI #410
@@ -29,12 +30,15 @@ public class GS1_4X extends GS1 {
         super.matchers.put( "421", Pattern.compile("^421[0-9]{3}(.){1,9}[%\\x1D]") );   // AI #421
         super.matchers.put( "421eol", Pattern.compile("^21[0-9]{3}(.){1,9}$") );        // AI #421 (eol)
         super.matchers.put( "422", Pattern.compile("^422[0-9]{3}") );                   // AI #422
+        super.matchers.put( "422eol", Pattern.compile("^422[0-9]{3}$") );               // AI #422 (eol)
         super.matchers.put( "423", Pattern.compile("^423[0-9]{3}(.){1,12}[%\\x1D]") );  // AI #423
         super.matchers.put( "423eol", Pattern.compile("^423[0-9]{3}(.){1,12}$") );      // AI #423 (eol)
         super.matchers.put( "424", Pattern.compile("^424[0-9]{3}") );                   // AI #424
+        super.matchers.put( "424eol", Pattern.compile("^424[0-9]{3}$") );               // AI #424 (eol)
         super.matchers.put( "425", Pattern.compile("^425[0-9]{3}(.){1,12}[%\\x1D]") );  // AI #425
         super.matchers.put( "425eol", Pattern.compile("^425[0-9]{3}(.){1,12}$") );      // AI #425 (eol)
         super.matchers.put( "426", Pattern.compile("^426[0-9]{3}") );                   // AI #426
+        super.matchers.put( "426eol", Pattern.compile("^426[0-9]{3}$") );               // AI #426 (eol)
         super.matchers.put( "427", Pattern.compile("^427(.){1,3}[%\\x1D]") );           // AI #427
         super.matchers.put( "427eol", Pattern.compile("^427(.){1,3}$") );               // AI #427 (eol)
         
@@ -93,7 +97,14 @@ public class GS1_4X extends GS1 {
     }
         
     //
-        
+    
+    
+    public Object parse402eol(String element){
+        return ( parse402(element));
+    }
+    
+    //
+    
     public Object parse403(String element){
         
         HashMap<String, Object> output = new HashMap<>();
@@ -273,7 +284,13 @@ public class GS1_4X extends GS1 {
     }
     
     //
-        
+    
+    public Object parse422eol(String element){
+        return ( parse422(element));
+    }
+    
+    //
+    
     public Object parse423(String element){
         
         HashMap<String, Object> output = new HashMap<>();
@@ -341,7 +358,15 @@ public class GS1_4X extends GS1 {
     }
     
     //
-                
+    
+    
+    public Object parse426eol(String element){
+        return ( parse426(element));
+    }
+    
+    //
+    
+    
     public Object parse427(String element){
         
         HashMap<String, Object> output = new HashMap<>();
