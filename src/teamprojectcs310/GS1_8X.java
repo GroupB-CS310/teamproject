@@ -53,7 +53,7 @@ public class GS1_8X extends GS1  {
         super.matchers.put("8111", Pattern.compile("^8111(.){1,70}[%\\x1D]"));
         super.matchers.put("8111eol", Pattern.compile("^8111(.){1,70}$")); 
         super.matchers.put("8112", Pattern.compile("^8112(.){1,70}[%\\x1D]"));
-        super.matchers.put("8112", Pattern.compile("^8112(.){1,70}$")); 
+        super.matchers.put("8112eol", Pattern.compile("^8112eol(.){1,70}$")); 
         super.matchers.put("8200", Pattern.compile("^8200(.){1,70}[%\\x1D]"));
         super.matchers.put("8200eol", Pattern.compile("^8200(.){1,70}$"));
     }
