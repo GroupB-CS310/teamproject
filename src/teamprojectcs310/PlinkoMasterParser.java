@@ -1,4 +1,4 @@
-package teamprojectcs310;
+    package teamprojectcs310;
 
 import org.json.simple.JSONValue;
 import java.lang.reflect.Constructor;
@@ -64,6 +64,7 @@ public class PlinkoMasterParser {
             /* If element string could not be identified, abort the parse */
             
             else {
+                System.out.println("CODE INVALID");
                 break;
             }
             
