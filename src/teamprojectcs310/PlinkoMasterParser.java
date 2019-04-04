@@ -25,12 +25,13 @@ public class PlinkoMasterParser {
             /* Sample first digit in code */
             
             char d = code.charAt(0);
-            System.out.println("Code Digit " + d + " Found");
+            //System.out.println("Code Digit " + d + " Found");
             
             /* Is digit valid? */
             
             if ((d >= '0') && (d <= '9')) {
-                            
+                System.out.println("Code Digit " + d + " Found");
+
                 try {
                     
                     /* If so, instantiate the corresponding matcher/parser collection */
