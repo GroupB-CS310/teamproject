@@ -12,8 +12,8 @@ public class GS1_3X extends GS1 {
         
 
         
-        super.matchers.put( "30", Pattern.compile("^30(.){1,8}[%\\x1D]") );             // AI #30       
-        super.matchers.put( "30eol", Pattern.compile("^30(.){1,8}$") );                 // AI #30 (eol)
+        super.matchers.put( "30", Pattern.compile("^30[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,8}[%\\x1D]") );             // AI #30       
+        super.matchers.put( "30eol", Pattern.compile("^30[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,8}$") );                 // AI #30 (eol)
         super.matchers.put( "310n", Pattern.compile("^310n[0-9]{6}"));                  // AI #310n
         super.matchers.put( "311n", Pattern.compile("^311n[0-9]{6}"));                  // AI #311n
         super.matchers.put( "312n", Pattern.compile("^312n[0-9]{6}"));                  // AI #312n
@@ -67,18 +67,18 @@ public class GS1_3X extends GS1 {
         super.matchers.put( "367n", Pattern.compile("^367n[0-9]{6}"));                  // AI #367n
         super.matchers.put( "368n", Pattern.compile("^368n[0-9]{6}"));                  // AI #368n
         super.matchers.put( "369n", Pattern.compile("^369n[0-9]{6}"));                  // AI #369n
-        super.matchers.put( "37", Pattern.compile("^37(.){1,8}[%\\x1D]") );             // AI #37       
-        super.matchers.put( "37eol", Pattern.compile("^37(.){1,8}$") );                 // AI #37 (eol)
-        super.matchers.put( "390n", Pattern.compile("^390n(.){1,15}[%\\x1D]") );        // AI #390n       
-        super.matchers.put( "390neol", Pattern.compile("^390n(.){1,15}$") );            // AI #390n (eol)
-        super.matchers.put( "391n", Pattern.compile("^391n[0-9]{3}(.){1,15}[%\\x1D]") );// AI #391n       
-        super.matchers.put( "391neol", Pattern.compile("^391n[0-9]{3}(.){1,15}$") );    // AI #391n (eol)
-        super.matchers.put( "392n", Pattern.compile("^392n(.){1,15}[%\\x1D]") );        // AI #392n       
-        super.matchers.put( "392neol", Pattern.compile("^392n(.){1,15}$") );            // AI #392n (eol)
-        super.matchers.put( "393n", Pattern.compile("^393n[0-9]{3}(.){1,15}[%\\x1D]") );// AI #393n       
-        super.matchers.put( "393neol", Pattern.compile("^393n[0-9]{3}(.){1,15}$") );    // AI #393n (eol)
+        super.matchers.put( "37", Pattern.compile("^37[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,8}[%\\x1D]") );             // AI #37       
+        super.matchers.put( "37eol", Pattern.compile("^37[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,8}$") );                 // AI #37 (eol)
+        super.matchers.put( "390n", Pattern.compile("^390n[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,15}[%\\x1D]") );        // AI #390n       
+        super.matchers.put( "390neol", Pattern.compile("^390n[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,15}$") );            // AI #390n (eol)
+        super.matchers.put( "391n", Pattern.compile("^391n[0-9]{3}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,15}[%\\x1D]") );// AI #391n       
+        super.matchers.put( "391neol", Pattern.compile("^391n[0-9]{3}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,15}$") );    // AI #391n (eol)
+        super.matchers.put( "392n", Pattern.compile("^392n[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,15}[%\\x1D]") );        // AI #392n       
+        super.matchers.put( "392neol", Pattern.compile("^392n[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,15}$") );            // AI #392n (eol)
+        super.matchers.put( "393n", Pattern.compile("^393n[0-9]{3}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,15}[%\\x1D]") );// AI #393n       
+        super.matchers.put( "393neol", Pattern.compile("^393n[0-9]{3}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,15}$") );    // AI #393n (eol)
         super.matchers.put( "394n", Pattern.compile("^394n[0-9]{4}"));                  // AI #394n
-        super.matchers.put( "394neol", Pattern.compile("^394n(.){1,4}$") );             // AI #394n (eol)
+        super.matchers.put( "394neol", Pattern.compile("^394n[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,4}$") );             // AI #394n (eol)
     
     }
     

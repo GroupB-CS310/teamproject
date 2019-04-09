@@ -12,26 +12,26 @@ public class GS1_2X extends GS1 {
         super.matchers = new HashMap<>();
         
         super.matchers.put( "20", Pattern.compile("^20[0-9]{2}") ); // AI #20
-        super.matchers.put( "21", Pattern.compile("^21(.){1,20}[%\\x1D]") ); // AI #21
-        super.matchers.put( "21eol", Pattern.compile("^21(.){1,20}$") );     // AI #21 (eol)
-        super.matchers.put( "22", Pattern.compile("^22(.){1,20}[%\\x1D]") ); // AI #22
-        super.matchers.put( "22eol", Pattern.compile("^22(.){1,20}$") );     // AI #22 (eol)
-        super.matchers.put( "240", Pattern.compile("^240(.){1,30}[%\\x1D]") ); // AI #240
-        super.matchers.put( "240eol", Pattern.compile("^240(.){1,30}$") );     // AI #240 (eol)
-        super.matchers.put( "241", Pattern.compile("^241(.){1,30}[%\\x1D]") ); // AI #241
-        super.matchers.put( "241eol", Pattern.compile("^241(.){1,30}$") );     // AI #241 (eol)
+        super.matchers.put( "21", Pattern.compile("^21[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") ); // AI #21
+        super.matchers.put( "21eol", Pattern.compile("^21[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );     // AI #21 (eol)
+        super.matchers.put( "22", Pattern.compile("^22[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") ); // AI #22
+        super.matchers.put( "22eol", Pattern.compile("^22[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );     // AI #22 (eol)
+        super.matchers.put( "240", Pattern.compile("^240[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]") ); // AI #240
+        super.matchers.put( "240eol", Pattern.compile("^240[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$") );     // AI #240 (eol)
+        super.matchers.put( "241", Pattern.compile("^241[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]") ); // AI #241
+        super.matchers.put( "241eol", Pattern.compile("^241[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$") );     // AI #241 (eol)
         super.matchers.put( "242", Pattern.compile("^242[0-9]{1,6}[%\\x1D]") ); // AI #242
         super.matchers.put( "242eol", Pattern.compile("^242[0-9]{1,6}$") );     // AI #242 (eol)
-        super.matchers.put( "243", Pattern.compile("^243(.){1,20}[%\\x1D]") ); // AI #243
-        super.matchers.put( "243eol", Pattern.compile("^243(.){1,20}$") );     // AI #243 (eol)
-        super.matchers.put( "250", Pattern.compile("^250(.){1,30}[%\\x1D]") ); // AI #250
-        super.matchers.put( "250eol", Pattern.compile("^250(.){1,30}$") );     // AI #250 (eol)
-        super.matchers.put( "251", Pattern.compile("^251(.){1,30}[%\\x1D]") ); // AI #251
-        super.matchers.put( "251eol", Pattern.compile("^251(.){1,30}$") );     // AI #251 (eol)
-        super.matchers.put( "253", Pattern.compile("^253(.){1,17}[%\\x1D]") ); // AI #253
-        super.matchers.put( "253eol", Pattern.compile("^253[0-9]{13}(.){1,17}$") );     // AI #253 (eol)
-        super.matchers.put( "254", Pattern.compile("^254[0-9]{13}(.){1,20}[%\\x1D]") ); // AI #254
-        super.matchers.put( "254eol", Pattern.compile("^254(.){1,20}$") );     // AI #254 (eol)
+        super.matchers.put( "243", Pattern.compile("^243[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") ); // AI #243
+        super.matchers.put( "243eol", Pattern.compile("^243[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );     // AI #243 (eol)
+        super.matchers.put( "250", Pattern.compile("^250[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]") ); // AI #250
+        super.matchers.put( "250eol", Pattern.compile("^250[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$") );     // AI #250 (eol)
+        super.matchers.put( "251", Pattern.compile("^251[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]") ); // AI #251
+        super.matchers.put( "251eol", Pattern.compile("^251[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$") );     // AI #251 (eol)
+        super.matchers.put( "253", Pattern.compile("^253[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,17}[%\\x1D]") ); // AI #253
+        super.matchers.put( "253eol", Pattern.compile("^253[0-9]{13}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,17}$") );     // AI #253 (eol)
+        super.matchers.put( "254", Pattern.compile("^254[0-9]{13}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") ); // AI #254
+        super.matchers.put( "254eol", Pattern.compile("^254[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );     // AI #254 (eol)
         super.matchers.put( "255", Pattern.compile("^255[0-9]{13}[0-9]{1,12}[%\\x1D]") ); // AI #255
         super.matchers.put( "255eol", Pattern.compile("^255[0-9]{13}[0-9]{1,12}$") );     // AI #255 (eol)
         
