@@ -1,5 +1,6 @@
 package teamprojectcs310;
 
+import org.json.simple.JSONValue;
 import java.util.HashMap;
 import java.util.regex.Pattern;
 
@@ -21,7 +22,7 @@ public class GS1_0X extends GS1 {
         
         HashMap<String, Object> output = new HashMap<>();
         System.out.println("Found Element String: " + element);
-        
+       
         output.put("title", "SSCC");
         output.put("ai", element.substring(0, 2) );
         output.put("extension", Integer.parseInt( element.substring(3) ) );
