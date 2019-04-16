@@ -280,5 +280,117 @@ public class GS1_7X extends GS1 {
     
     public Object parse7023eol(String element){
         return ( parse7023(element));
+    } 
+    public Object parse703s(String element){
+        
+    HashMap<String, Object> output = new HashMap<>();
+    System.out.println("Found Element String: " + element);
+    
+    output.put("title", "PROCESSOR #s");
+    output.put("ai", element.substring(0, 3) );
+    output.put("datafield", element.substring(3 ) );
+    output.put("element", element);
+    return output;
+    }
+    
+    public Object parse703seol(String element){
+        return ( parse703s(element));
+    }   
+    
+    public Object parse710(String element){
+        
+    HashMap<String, Object> output = new HashMap<>();
+    System.out.println("Found Element String: " + element);
+    
+    output.put("title", "NHRN PZN");
+    output.put("ai", element.substring(0, 3) );
+    output.put("datafield", element.substring(3 ) );
+    output.put("element", element);
+    return output;
+    }
+    
+    public Object parse710eol(String element){
+        return ( parse710(element));
+    }  
+    
+    public Object parse711(String element){
+        
+    HashMap<String, Object> output = new HashMap<>();
+    System.out.println("Found Element String: " + element);
+    
+    output.put("title", "NHRN CIP");
+    output.put("ai", element.substring(0, 3) );
+    output.put("datafield", element.substring(3 ) );
+    output.put("element", element);
+    return output;
+    }
+    
+    public Object parse711eol(String element){
+        return ( parse711(element));
+    }   
+    
+        
+    public Object parse712(String element){
+        
+    HashMap<String, Object> output = new HashMap<>();
+    System.out.println("Found Element String: " + element);
+    
+    output.put("title", "NHRN CN");
+    output.put("ai", element.substring(0, 3) );
+    output.put("datafield", element.substring(3 ) );
+    output.put("element", element);
+    return output;
+    }
+    
+    public Object parse712eol(String element){
+        return ( parse712(element));
+    }   
+    
+    public Object parse713(String element){
+        
+    HashMap<String, Object> output = new HashMap<>();
+    System.out.println("Found Element String: " + element);
+    
+    output.put("title", "NHRN DRN");
+    output.put("ai", element.substring(0, 3) );
+    output.put("datafield", element.substring(3 ) );
+    output.put("element", element);
+    return output;
+    }
+    
+    public Object parse713eol(String element){
+        return ( parse713(element));
+    }   
+    
+    public Object parse714(String element){
+        
+    HashMap<String, Object> output = new HashMap<>();
+    System.out.println("Found Element String: " + element);
+    
+    output.put("title", "NHRN AIM");
+    output.put("ai", element.substring(0, 3) );
+    output.put("datafield", element.substring(3 ) );
+    output.put("element", element);
+    return output;
+    }
+    
+    public Object parse714eol(String element){
+        return ( parse714(element));
+    }   
+    
+    public Object parse723s(String element){
+        
+    HashMap<String, Object> output = new HashMap<>();
+    System.out.println("Found Element String: " + element);
+    
+    output.put("title", "CERT # s");
+    output.put("ai", element.substring(0, 3) );
+    output.put("datafield", element.substring(3 ) );
+    output.put("element", element);
+    return output;
+    }
+    
+    public Object parse723seol(String element){
+        return ( parse723s(element));
     }   
 }
