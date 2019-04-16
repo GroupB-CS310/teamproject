@@ -131,7 +131,7 @@ public class GS1_4X extends GS1 {
     
         output.put("title", "SHIP TO LOC");
         output.put("ai", element.substring(0, 2) );
-        output.put("datafield",( element.substring(3) ) );
+        output.put("datafield", ( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -146,7 +146,7 @@ public class GS1_4X extends GS1 {
     
         output.put("title", "BILL TO");
         output.put("ai", element.substring(0, 2) );
-        output.put("datafield",( element.substring(3) ) );
+        output.put("datafield", ( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -161,7 +161,7 @@ public class GS1_4X extends GS1 {
     
         output.put("title", "PURCHASE FROM");
         output.put("ai", element.substring(0, 2) );
-        output.put("datafield",( element.substring(3) ) );
+        output.put("datafield", ( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -176,7 +176,7 @@ public class GS1_4X extends GS1 {
     
         output.put("title", "SHIP FOR LOC");
         output.put("ai", element.substring(0, 2) );
-        output.put("datafield",( element.substring(3) ) );
+        output.put("datafield", ( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -192,7 +192,7 @@ public class GS1_4X extends GS1 {
     
         output.put("title", "LOC No");
         output.put("ai", element.substring(0, 2) );
-        output.put("datafield",( element.substring(3) ) );
+        output.put("datafield", ( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -207,7 +207,7 @@ public class GS1_4X extends GS1 {
     
         output.put("title", "PAY TO");
         output.put("ai", element.substring(0, 2) );
-        output.put("datafield",( element.substring(3) ) );
+        output.put("datafield", ( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -222,7 +222,7 @@ public class GS1_4X extends GS1 {
     
         output.put("title", "PROD/SERV LOC");
         output.put("ai", element.substring(0, 2) );
-        output.put("datafield",( element.substring(3) ) );
+        output.put("datafield", ( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -323,6 +323,9 @@ public class GS1_4X extends GS1 {
         return output;
     }
     
+    public Object parse424eol(String element){
+        return ( parse424(element));
+    }
     //
             
     public Object parse425(String element){
