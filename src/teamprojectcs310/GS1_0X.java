@@ -29,6 +29,7 @@ public class GS1_0X extends GS1 {
         output.put("check", Integer.parseInt( element.substring(19) ) );
         output.put("datafield", ( element.substring(2 ) ) );
         output.put("element", element);
+        output.put("datafield",( element.substring(2) ) );
         
         return output;
         
@@ -63,6 +64,7 @@ public class GS1_0X extends GS1 {
         output.put("check", Integer.parseInt( element.substring(15) ) );
         output.put("datafield", ( element.substring(2) ) );
         output.put("element", element);
+        output.put("datafield",( element.substring(2) ) );
         
         return output;
         

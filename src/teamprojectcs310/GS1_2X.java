@@ -45,6 +45,7 @@ public class GS1_2X extends GS1 {
         output.put("ai", element.substring(0, 2) );
         output.put("varient", Integer.parseInt( element.substring(3, 4) ) );
         output.put("element", element);
+        output.put("datafield",( element.substring(2) ) );
         
         return output;
         

@@ -53,6 +53,7 @@ public class GS1_1X extends GS1 {
         output.put("month", Integer.parseInt( element.substring(4, 6) ));
         output.put("day", Integer.parseInt( element.substring(6, 8) ));
         output.put("element", element);
+        output.put("datafield",( element.substring(2) ) );
         
         return output;
         
@@ -69,6 +70,7 @@ public class GS1_1X extends GS1 {
         output.put("month", Integer.parseInt( element.substring(4, 6) ));
         output.put("day", Integer.parseInt( element.substring(6, 8) ));
         output.put("element", element);
+        output.put("datafield",( element.substring(2) ) );
         
         return output;
         
@@ -85,6 +87,7 @@ public class GS1_1X extends GS1 {
         output.put("month", Integer.parseInt( element.substring(4, 6) ));
         output.put("day", Integer.parseInt( element.substring(6, 8) ));
         output.put("element", element);
+        output.put("datafield",( element.substring(2) ) );
         
         return output;
         
@@ -101,6 +104,7 @@ public class GS1_1X extends GS1 {
         output.put("month", Integer.parseInt( element.substring(4, 6) ));
         output.put("day", Integer.parseInt( element.substring(6, 8) ));
         output.put("element", element);
+        output.put("datafield",( element.substring(2) ) );
         
         return output;
         
@@ -117,6 +121,7 @@ public class GS1_1X extends GS1 {
         output.put("month", Integer.parseInt( element.substring(4, 6) ));
         output.put("day", Integer.parseInt( element.substring(6, 8) ));
         output.put("element", element);
+        output.put("datafield",( element.substring(2) ) );
         
         return output;
         
@@ -133,6 +138,7 @@ public class GS1_1X extends GS1 {
         output.put("month", Integer.parseInt( element.substring(4, 6) ));
         output.put("day", Integer.parseInt( element.substring(6, 8) ));
         output.put("element", element);
+        output.put("datafield",( element.substring(2) ) );
         
         return output;
         
