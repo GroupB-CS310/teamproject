@@ -91,7 +91,7 @@ public class GS1_3X extends GS1 {
     
         output.put("title", "VAR. COUNT");
         output.put("ai", element.substring(0, 1) );
-        output.put("datafield", element.substring(1 ) );
+        output.put("datafield", element.substring(2, element.length() - 1) );
         output.put("element", element);
         
         return output;
