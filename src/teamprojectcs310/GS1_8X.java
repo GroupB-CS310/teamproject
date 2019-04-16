@@ -63,7 +63,7 @@ public class GS1_8X extends GS1  {
     
         output.put("title", "DIMENSIONS");
         output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("datafield", element.substring(3, element.length() - 1) );
         output.put("element", element);
         return output;
     }

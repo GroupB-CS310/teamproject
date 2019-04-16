@@ -29,7 +29,7 @@ public class GS1_1X extends GS1 {
         
         output.put("title", "BATCH/LOT");
         output.put("ai", element.substring(0, 2) );
-        output.put("datafield", element.substring(2) );
+        output.put("datafield", element.substring(2, element.length() - 1) );
         output.put("element", element);
         
         return output;
