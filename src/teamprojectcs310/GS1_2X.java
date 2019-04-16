@@ -45,6 +45,7 @@ public class GS1_2X extends GS1 {
         output.put("ai", element.substring(0, 2) );
         output.put("varient", Integer.parseInt( element.substring(3, 4) ) );
         output.put("element", element);
+        output.put("datafield",( element.substring(2) ) );
         
         return output;
         
@@ -57,7 +58,7 @@ public class GS1_2X extends GS1 {
         
         output.put("title", "SERIAL");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield",( element.substring(2) ) );
         output.put("element", element);
         
         return output;
@@ -77,7 +78,7 @@ public class GS1_2X extends GS1 {
         
         output.put("title", "CPV");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield",( element.substring(2) ) );
         output.put("element", element);
         
         return output;
@@ -97,7 +98,7 @@ public class GS1_2X extends GS1 {
         
         output.put("title", "ADDITIONAL ID");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield",( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -117,7 +118,7 @@ public class GS1_2X extends GS1 {
         
         output.put("title", "CUST. PART NO.");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield",( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -137,7 +138,7 @@ public class GS1_2X extends GS1 {
         
         output.put("title", "MTO VARIANT");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield",( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -157,7 +158,7 @@ public class GS1_2X extends GS1 {
         
         output.put("title", "PCN");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield",( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -177,7 +178,7 @@ public class GS1_2X extends GS1 {
         
         output.put("title", "SECONDARY SERIAL");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield",( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -197,7 +198,7 @@ public class GS1_2X extends GS1 {
         
         output.put("title", "REF. TO SOURCE");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield",( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -217,7 +218,7 @@ public class GS1_2X extends GS1 {
         
         output.put("title", "GDTI");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield",( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -237,7 +238,7 @@ public class GS1_2X extends GS1 {
         
         output.put("title", "GLN EXTENSION COMPONENT");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield",( element.substring(3) ) );
         output.put("element", element);
         
         return output;
@@ -257,7 +258,7 @@ public class GS1_2X extends GS1 {
         
         output.put("title", "GCN");
         output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("datafield",( element.substring(3) ) );
         output.put("element", element);
         
         return output;
