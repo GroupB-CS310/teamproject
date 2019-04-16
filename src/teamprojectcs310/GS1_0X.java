@@ -27,6 +27,7 @@ public class GS1_0X extends GS1 {
         output.put("ai", element.substring(0, 2) );
         output.put("extension", Integer.parseInt( element.substring(3) ) );
         output.put("check", Integer.parseInt( element.substring(19) ) );
+        output.put("datafield", ( element.substring(2 ) ) );
         output.put("element", element);
         output.put("datafield",( element.substring(2) ) );
         
@@ -61,6 +62,7 @@ public class GS1_0X extends GS1 {
         output.put("prefix", Integer.parseInt( element.substring(2, 10) ) );
         output.put("item", Integer.parseInt( element.substring(10, 15) ) );
         output.put("check", Integer.parseInt( element.substring(15) ) );
+        output.put("datafield", ( element.substring(2) ) );
         output.put("element", element);
         output.put("datafield",( element.substring(2) ) );
         
