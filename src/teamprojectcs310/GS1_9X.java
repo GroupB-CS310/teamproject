@@ -32,7 +32,168 @@ public class GS1_9X extends GS1 {
         super.matchers.put("98eol",  Pattern.compile("^98[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,90}$"));
         super.matchers.put("99",  Pattern.compile("^99[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,90}[%//x1D]"));
         super.matchers.put("99eol",  Pattern.compile("^99[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,90}$"));
+        
+    }
+        public Object parse90(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "INTERNAL");
+        output.put("ai", element.substring(0, 2) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+        public Object parse90eol(String element){
+        return ( parse90(element));
+    }
+        
+        public Object parse91(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "INTERNAL");
+        output.put("ai", element.substring(0, 2) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+        public Object parse91eol(String element){
+        return ( parse91(element));
+    }
+        
+        public Object parse92(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "INTERNAL");
+        output.put("ai", element.substring(0, 2) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+        public Object parse92eol(String element){
+        return ( parse92(element));
+    }
+      
+        public Object parse93(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "INTERNAL");
+        output.put("ai", element.substring(0, 2) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+        public Object parse93eol(String element){
+        return ( parse93(element));
+    }
+        
+        public Object parse94(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "INTERNAL");
+        output.put("ai", element.substring(0, 2) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+        public Object parse94eol(String element){
+        return ( parse94(element));
+    }
+        
+        public Object parse95(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "INTERNAL");
+        output.put("ai", element.substring(0, 2) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+        public Object parse95eol(String element){
+        return ( parse95(element));
+    }
+        
+        public Object parse96(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "INTERNAL");
+        output.put("ai", element.substring(0, 2) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+        public Object parse96eol(String element){
+        return ( parse96(element));
+    }
+        
+        public Object parse97(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "INTERNAL");
+        output.put("ai", element.substring(0, 2) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+        public Object parse97eol(String element){
+        return ( parse97(element));
+    }
+        
+        public Object parse98(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "INTERNAL");
+        output.put("ai", element.substring(0, 2) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+        public Object parse98eol(String element){
+        return ( parse98(element));
+    }
+        
+        public Object parse99(String element){
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+    
+        output.put("title", "INTERNAL");
+        output.put("ai", element.substring(0, 2) );
+        output.put("element", element);
+        
+        return output;
+    }
+    
+        public Object parse99eol(String element){
+        return ( parse99(element));
+    }
     }
 
-}
+
 

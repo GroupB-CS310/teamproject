@@ -51,8 +51,8 @@ public class GS1_4X extends GS1 {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "ORDER NUMBER");
-        output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2 ) );
+        output.put("ai", element.substring(0, 3) );
+        output.put("number", element.substring(3 ) );
         output.put("element", element);
         
         return output;
