@@ -90,7 +90,7 @@ public class GS1_3X extends GS1 {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "VAR. COUNT");
-        output.put("ai", element.substring(0, 1) );
+        output.put("ai", element.substring(0, 2) );
         output.put("datafield", element.substring(2, element.length() - 1) );
         output.put("element", element);
         
@@ -798,8 +798,8 @@ public class GS1_3X extends GS1 {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "COUNT");
-        output.put("ai", element.substring(0, 1) );
-        output.put("datafield", element.substring(1) );
+        output.put("ai", element.substring(0, 2) );
+        output.put("datafield", element.substring(2, element.length() - 1) );
         output.put("element", element);
         
         return output;

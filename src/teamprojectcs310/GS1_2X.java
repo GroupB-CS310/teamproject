@@ -137,8 +137,8 @@ public class GS1_2X extends GS1 {
         System.out.println("Found Element String: " + element);
         
         output.put("title", "MTO VARIANT");
-        output.put("ai", element.substring(0, 2) );
-        output.put("datafield", element.substring(2, element.length() - 1) );
+        output.put("ai", element.substring(0, 3) );
+        output.put("datafield", element.substring(3, element.length() - 1) );
         output.put("element", element);
         
         return output;
@@ -157,8 +157,8 @@ public class GS1_2X extends GS1 {
         System.out.println("Found Element String: " + element);
         
         output.put("title", "PCN");
-        output.put("ai", element.substring(0, 2) );
-        output.put("datafield", element.substring(2, element.length() - 1) );
+        output.put("ai", element.substring(0, 3) );
+        output.put("datafield", element.substring(3, element.length() - 1) );
         output.put("element", element);
         
         return output;
@@ -177,8 +177,8 @@ public class GS1_2X extends GS1 {
         System.out.println("Found Element String: " + element);
         
         output.put("title", "SECONDARY SERIAL");
-        output.put("ai", element.substring(0, 2) );
-        output.put("datafield", element.substring(2, element.length() - 1) );
+        output.put("ai", element.substring(0, 3) );
+        output.put("datafield", element.substring(3, element.length() - 1) );
         output.put("element", element);
         
         return output;
@@ -197,8 +197,8 @@ public class GS1_2X extends GS1 {
         System.out.println("Found Element String: " + element);
         
         output.put("title", "REF. TO SOURCE");
-        output.put("ai", element.substring(0, 2) );
-        output.put("datafield", element.substring(2, element.length() - 1) );
+        output.put("ai", element.substring(0, 3) );
+        output.put("datafield", element.substring(3, element.length() - 1) );
         output.put("element", element);
         
         return output;
@@ -217,8 +217,8 @@ public class GS1_2X extends GS1 {
         System.out.println("Found Element String: " + element);
         
         output.put("title", "GDTI");
-        output.put("ai", element.substring(0, 2) );
-        output.put("datafield", element.substring(2, element.length() - 1) );
+        output.put("ai", element.substring(0, 3) );
+        output.put("datafield", element.substring(3, element.length() - 1) );
         output.put("element", element);
         
         return output;
@@ -238,7 +238,7 @@ public class GS1_2X extends GS1 {
         
         output.put("title", "GLN EXTENSION COMPONENT");
         output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(2, element.length() - 1) );
+        output.put("datafield", element.substring(3, element.length() - 1) );
         output.put("element", element);
         
         return output;
