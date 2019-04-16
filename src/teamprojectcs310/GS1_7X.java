@@ -64,7 +64,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "NSN");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
         return output;
@@ -80,7 +80,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "MEAT CUT");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;
@@ -96,7 +96,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "EXPIRY TIME");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;
@@ -112,7 +112,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "ACTIVE POTENCY");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;
@@ -128,7 +128,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "CATCH AREA");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;
@@ -144,7 +144,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "FIRST FREEZE DATE");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;
@@ -160,7 +160,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "HARVEST DATE");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;
@@ -176,7 +176,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "AQUATIC SPECIES");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;
@@ -192,7 +192,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "FISHING GEAR TYPE");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;
@@ -208,7 +208,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "PROD METHOD");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;
@@ -224,7 +224,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "REFURB LOT");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;
@@ -240,7 +240,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "FUNC STAT");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;
@@ -256,7 +256,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "REV STAT");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;
@@ -272,7 +272,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "GIAI - ASSEMBLY");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;
@@ -287,7 +287,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "PROCESSOR #s");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;
@@ -384,7 +384,7 @@ public class GS1_7X extends GS1 {
     System.out.println("Found Element String: " + element);
     
     output.put("title", "CERT # s");
-    output.put("ai", element.substring(0, 3) );
+    output.put("ai", element.substring(0, 4) );
     output.put("datafield", element.substring(3 ) );
     output.put("element", element);
     return output;

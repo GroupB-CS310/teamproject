@@ -62,8 +62,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "DIMENSIONS");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3, element.length() - 1) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -75,8 +75,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "CMT No");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -88,8 +88,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "GRAI");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output; 
     }
@@ -101,8 +101,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "GIAI");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -114,8 +114,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "PRICE PER UNIT");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -127,8 +127,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "ITIP or GCTIN");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -140,8 +140,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "IBAN");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -153,8 +153,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "PROD TIME");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -166,8 +166,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "OPTSEN");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -179,8 +179,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "CPID");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -192,8 +192,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "CPID SERIAL");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -205,8 +205,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "VERSION");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -218,8 +218,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "GMN or BUDI-DI");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -231,8 +231,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "GSRN-PROVIDER");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -244,8 +244,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "GSRN-RECIPIENT");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -257,8 +257,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "SRIN");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -270,8 +270,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "REF No");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -283,8 +283,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "NA COUP CODE");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -296,8 +296,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "ITIP CONTENT");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -309,8 +309,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "POINTS");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -322,8 +322,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "+COUPON NA");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
@@ -335,8 +335,8 @@ public class GS1_8X extends GS1  {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "PRODUCT URL");
-        output.put("ai", element.substring(0, 3) );
-        output.put("datafield", element.substring(3 ) );
+        output.put("ai", element.substring(0, 4) );
+        output.put("datafield", element.substring(4, element.length() - 1) );
         output.put("element", element);
         return output;
     }
