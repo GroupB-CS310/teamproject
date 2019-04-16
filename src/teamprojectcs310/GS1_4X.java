@@ -70,7 +70,7 @@ public class GS1_4X extends GS1 {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "GINC");
-        output.put("ai", element.substring(0, 2) );
+        output.put("ai", element.substring(0, 3) );
         output.put("datafield",( element.substring(3, element.length() - 1) ) );
         output.put("element", element);
         
@@ -89,7 +89,7 @@ public class GS1_4X extends GS1 {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "GSIN");
-        output.put("ai", element.substring(0, 2) );
+        output.put("ai", element.substring(0, 3) );
         output.put("datafield",( element.substring(3, element.length() - 1) ) );
         output.put("element", element);
         
@@ -111,7 +111,7 @@ public class GS1_4X extends GS1 {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "ROUTE");
-        output.put("ai", element.substring(0, 2) );
+        output.put("ai", element.substring(0, 3) );
         output.put("datafield",( element.substring(3, element.length() - 1) ) );
         output.put("element", element);
         
@@ -236,7 +236,7 @@ public class GS1_4X extends GS1 {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "SHIP TO POST");
-        output.put("ai", element.substring(0, 2) );
+        output.put("ai", element.substring(0, 3) );
         output.put("datafield",( element.substring(3, element.length() - 1) ) );
         output.put("element", element);
         
@@ -256,7 +256,7 @@ public class GS1_4X extends GS1 {
     
         output.put("title", "SHIP TO POST");
         //N3+N3+X..9
-        output.put("ai", element.substring(0, 5) );
+        output.put("ai", element.substring(0, 3) );
         output.put("datafield",( element.substring(3, element.length() - 1) ) );
         output.put("element", element);
         
@@ -276,7 +276,7 @@ public class GS1_4X extends GS1 {
     
         output.put("title", "ORIGIN");
         //N3+N3+X..9
-        output.put("ai", element.substring(0, 5) );
+        output.put("ai", element.substring(0, 3) );
         output.put("datafield",( element.substring(3, element.length() - 1) ) );
         output.put("element", element);
         
@@ -297,7 +297,7 @@ public class GS1_4X extends GS1 {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "COUNTRY - INITIAL PROCESS");
-        output.put("ai", element.substring(0, 2) );
+        output.put("ai", element.substring(0, 3) );
         output.put("datafield",( element.substring(3, element.length() - 1) ) );
         output.put("element", element);
         
@@ -316,7 +316,7 @@ public class GS1_4X extends GS1 {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "COUNTRY - PROCESS");
-        output.put("ai", element.substring(0, 2) );
+        output.put("ai", element.substring(0, 3) );
         output.put("datafield",( element.substring(3, element.length() - 1) ) );
         output.put("element", element);
         
@@ -334,7 +334,7 @@ public class GS1_4X extends GS1 {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "COUNTRY - DISASSEMBLY");
-        output.put("ai", element.substring(0, 2) );
+        output.put("ai", element.substring(0, 3) );
         output.put("datafield",( element.substring(3, element.length() - 1) ) );
         output.put("element", element);
         
@@ -353,7 +353,7 @@ public class GS1_4X extends GS1 {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "COUNTRY - FULL PROCESS");
-        output.put("ai", element.substring(0, 2) );
+        output.put("ai", element.substring(0, 3) );
         output.put("datafield",( element.substring(3, element.length() - 1) ) );
         output.put("element", element);
         
@@ -376,7 +376,7 @@ public class GS1_4X extends GS1 {
         System.out.println("Found Element String: " + element);
     
         output.put("title", "ORIGIN SUBDIVISION");
-        output.put("ai", element.substring(0, 2) );
+        output.put("ai", element.substring(0, 3) );
         output.put("datafield",( element.substring(3, element.length() - 1) ) );
         output.put("element", element);
         
