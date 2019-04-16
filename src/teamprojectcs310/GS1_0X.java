@@ -45,7 +45,7 @@ public class GS1_0X extends GS1 {
         output.put("prefix", Integer.parseInt( element.substring(2, 10) ) );
         output.put("item", Integer.parseInt( element.substring(10, 15) ) );
         output.put("check", Integer.parseInt( element.substring(15) ) );
-        output.put("datafield",( element.substring(2) ) );
+        output.put("datafield", ( element.substring(2 ) ) );
         output.put("element", element);
         
         return output;
