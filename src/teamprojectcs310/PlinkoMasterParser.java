@@ -61,6 +61,8 @@ public class PlinkoMasterParser {
                 code = code.substring(element.length()).trim();
                 System.out.println(JSONValue.toJSONString(results.get("ai")));
                 System.out.println(JSONValue.toJSONString(results.get("datafield")));
+                System.out.println(JSONValue.toJSONString(results.get("title")));
+                
             }
             
             /* If element string could not be identified, abort the parse */
