@@ -22,11 +22,11 @@ public class GS1_0X extends GS1 {
         
         HashMap<String, Object> output = new HashMap<>();
         System.out.println("Found Element String: " + element);
-       
+        
         output.put("title", "SSCC");
         output.put("ai", element.substring(0, 2) );
-        output.put("extension", Integer.parseInt( element.substring(3) ) );
-        output.put("check", Integer.parseInt( element.substring(19) ) );
+        output.put("extension",( element.substring(3) ) );
+        output.put("check",( element.substring(19) ) );
         output.put("datafield", ( element.substring(2 ) ) );
         output.put("element", element);
         

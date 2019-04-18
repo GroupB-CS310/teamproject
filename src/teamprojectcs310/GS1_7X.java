@@ -12,19 +12,19 @@ public class GS1_7X extends GS1 {
         super.matchers = new HashMap<>();
         
         super.matchers.put("7001" , Pattern.compile("^7001[0-9]{13}[%\\x1D]") );
-        super.matchers.put("7001eol", Pattern.compile("^7001[0-9]{13}[%\\x1D]"));
+        super.matchers.put("7001eol", Pattern.compile("^7001[0-9]{13}$"));
         super.matchers.put("7002" , Pattern.compile("^7002[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]") );
         super.matchers.put("7002eol", Pattern.compile("^7002[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$"));
         super.matchers.put("7003" , Pattern.compile("^7003[0-9]{10}[%\\x1D]"));
         super.matchers.put("7003eol" , Pattern.compile("^7003[0-9]{10}$"));
-        super.matchers.put("7004", Pattern.compile("^7004[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,4}"));
-        super.matchers.put("7004eol" , Pattern.compile("^7004[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,4}$"));
+        super.matchers.put("7004", Pattern.compile("^7004[0-9]{1,4}[%\\x1D]"));
+        super.matchers.put("7004eol" , Pattern.compile("^7004[0-9]{1,4}$"));
         super.matchers.put("7005",Pattern.compile("^7005[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,12}[%\\x1D]") );
         super.matchers.put("7005eol", Pattern.compile("^7005[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,12}$"));
-        super.matchers.put("7006",Pattern.compile("^7006[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,6}"));       
-        super.matchers.put("7006eol",Pattern.compile("^7006[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,6}$"));        
-        super.matchers.put("7007",Pattern.compile("^7007[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,12}"));        
-        super.matchers.put("7007eol",Pattern.compile("^7007[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,12}$"));        
+        super.matchers.put("7006",Pattern.compile("^7006[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,6}[%\\x1D]"));       
+        super.matchers.put("7006eol",Pattern.compile("^7006[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,6}$"));        
+        super.matchers.put("7007",Pattern.compile("^7007[0-9]{1,12}[%\\x1D]"));        
+        super.matchers.put("7007eol",Pattern.compile("^7007[0-9]{1,12}$"));        
         super.matchers.put("7008",Pattern.compile("^7008[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,3}[%\\x1D]"));        
         super.matchers.put("7008eol",Pattern.compile("^7008[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,3}$"));        
         super.matchers.put("7009",Pattern.compile("^7009[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,10}[%\\x1D]"));        
