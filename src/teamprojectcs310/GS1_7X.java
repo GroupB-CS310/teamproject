@@ -17,18 +17,18 @@ public class GS1_7X extends GS1 {
         super.matchers.put("7002eol", Pattern.compile("^7002[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$"));
         super.matchers.put("7003" , Pattern.compile("^7003[0-9]{10}[%\\x1D]"));
         super.matchers.put("7003eol" , Pattern.compile("^7003[0-9]{10}$"));
-        super.matchers.put("7004", Pattern.compile("^7004[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,4}"));
-        super.matchers.put("7004eol" , Pattern.compile("^7004[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,4}$"));
+        super.matchers.put("7004", Pattern.compile("^7004[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,4}"));
+        super.matchers.put("7004eol" , Pattern.compile("^7004[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,4}$"));
         super.matchers.put("7005",Pattern.compile("^7005[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,12}[%\\x1D]") );
         super.matchers.put("7005eol", Pattern.compile("^7005[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,12}$"));
         super.matchers.put("7006",Pattern.compile("^7006[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,6}"));       
         super.matchers.put("7006eol",Pattern.compile("^7006[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,6}$"));        
-        super.matchers.put("7007",Pattern.compile("^7007[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6,12}"));        
-        super.matchers.put("7007eol",Pattern.compile("^7007[0-9]{4}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6,12}$"));        
+        super.matchers.put("7007",Pattern.compile("^7007[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,12}"));        
+        super.matchers.put("7007eol",Pattern.compile("^7007[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,12}$"));        
         super.matchers.put("7008",Pattern.compile("^7008[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,3}[%\\x1D]"));        
         super.matchers.put("7008eol",Pattern.compile("^7008[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,3}$"));        
         super.matchers.put("7009",Pattern.compile("^7009[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,10}[%\\x1D]"));        
-        super.matchers.put("7009eol",Pattern.compile("^7009[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,10}$")); //poop       
+        super.matchers.put("7009eol",Pattern.compile("^7009[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,10}$"));        
         super.matchers.put("7010" ,Pattern.compile("^7010[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,2}[%\\x1D]"));
         super.matchers.put("7010eol" ,Pattern.compile("^7010[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,2}$"));
         super.matchers.put("7020" ,Pattern.compile("^7020[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));
@@ -39,8 +39,8 @@ public class GS1_7X extends GS1 {
         super.matchers.put("7022eol" ,Pattern.compile("^7022[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
         super.matchers.put("7023" ,Pattern.compile("^7023[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]"));
         super.matchers.put("7023eol" ,Pattern.compile("^7023[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$"));
-        super.matchers.put("703s" ,Pattern.compile("^703[0-9]{1}[0-9]{3}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,27}[%\\x1D]"));
-        super.matchers.put("703seol" ,Pattern.compile("^703[0-9]{1}[0-9]{3}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,27}$"));
+        super.matchers.put("703s" ,Pattern.compile("^703s[0-9]{3}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,27}[%\\x1D]"));
+        super.matchers.put("703seol" ,Pattern.compile("^703s[0-9]{3}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,27}$"));
         super.matchers.put("710" ,Pattern.compile("^710[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));
         super.matchers.put("710eol" ,Pattern.compile("^710[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
         super.matchers.put("711" ,Pattern.compile("^711[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));
@@ -51,8 +51,8 @@ public class GS1_7X extends GS1 {
         super.matchers.put("713eol" ,Pattern.compile("^713[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
         super.matchers.put("714" ,Pattern.compile("^714[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));
         super.matchers.put("714eol" ,Pattern.compile("^714[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$"));
-        super.matchers.put("723s" ,Pattern.compile("^723[0-9]{1}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{2}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,28}[%\\x1D]"));
-        super.matchers.put("723seol" ,Pattern.compile("^723[0-9]{1}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{2}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,28}$"));
+        super.matchers.put("723s" ,Pattern.compile("^723s[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{2}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,28}[%\\x1D]"));
+        super.matchers.put("723seol" ,Pattern.compile("^723s[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{2}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,28}$"));
           
                 
     }

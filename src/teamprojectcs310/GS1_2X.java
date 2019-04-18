@@ -28,9 +28,9 @@ public class GS1_2X extends GS1 {
         super.matchers.put( "250eol", Pattern.compile("^250[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$") );     // AI #250 (eol)
         super.matchers.put( "251", Pattern.compile("^251[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]") ); // AI #251
         super.matchers.put( "251eol", Pattern.compile("^251[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$") );     // AI #251 (eol)
-        super.matchers.put( "253", Pattern.compile("^253[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,17}[%\\x1D]") ); // AI #253
+        super.matchers.put( "253", Pattern.compile("^253[0-9]{13}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,17}[%\\x1D]") ); // AI #253
         super.matchers.put( "253eol", Pattern.compile("^253[0-9]{13}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,17}$") );     // AI #253 (eol)
-        super.matchers.put( "254", Pattern.compile("^254[0-9]{13}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") ); // AI #254
+        super.matchers.put( "254", Pattern.compile("^254[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") ); // AI #254
         super.matchers.put( "254eol", Pattern.compile("^254[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );     // AI #254 (eol)
         super.matchers.put( "255", Pattern.compile("^255[0-9]{13}[0-9]{1,12}[%\\x1D]") ); // AI #255
         super.matchers.put( "255eol", Pattern.compile("^255[0-9]{13}[0-9]{1,12}$") );     // AI #255 (eol)

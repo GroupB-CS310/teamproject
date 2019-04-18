@@ -12,22 +12,22 @@ public class GS1_8X extends GS1  {
         
         
         
-        super.matchers.put("8001", Pattern.compile("^8001[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,14}")); 
-        super.matchers.put("8001eol", Pattern.compile("^8001[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,14}$"));  
+        super.matchers.put("8001", Pattern.compile("^8001[0-9]{1,14}")); 
+        super.matchers.put("8001eol", Pattern.compile("^8001[0-9]{1,14}$"));  
         super.matchers.put("8002", Pattern.compile("^8002[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]"));  
         super.matchers.put("8002eol", Pattern.compile("^8002[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$")); 
         super.matchers.put("8003", Pattern.compile("^8003[0-9]{14}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,16}[%\\x1D]")); 
         super.matchers.put("8003eol", Pattern.compile("^8003[0-9]{14}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,16}$")); 
         super.matchers.put("8004", Pattern.compile("^8004[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]")); 
         super.matchers.put("8004eol", Pattern.compile("^8004[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$")); 
-        super.matchers.put("8005", Pattern.compile("^8005[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}"));  
-        super.matchers.put("8005eol", Pattern.compile("^8005[0-9][!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{6}$"));
-        super.matchers.put("8006", Pattern.compile("^8006[0-9]{14}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z][0-9]{2}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z][0-9]{2}"));
-        super.matchers.put("8006eol", Pattern.compile("^8006[0-9]{14}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z][0-9]{2}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z][0-9]{2}$")); 
+        super.matchers.put("8005", Pattern.compile("^8005[0-9]{6}"));  
+        super.matchers.put("8005eol", Pattern.compile("^8005[0-9]{6}$"));
+        super.matchers.put("8006", Pattern.compile("^8006[0-9]{14}[0-9]{2}[0-9]{2}"));
+        super.matchers.put("8006eol", Pattern.compile("^8006[0-9]{14}[0-9]{2}[0-9]{2}$")); 
         super.matchers.put("8007", Pattern.compile("^8007[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,34}[%\\x1D]")); 
         super.matchers.put("8007eol", Pattern.compile("^8007[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,34}$")); 
-        super.matchers.put("8008", Pattern.compile("^8008[0-9]{8}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z][0-9]{1,4}")); 
-        super.matchers.put("8008eol", Pattern.compile("^8008[0-9]{8}[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z][0-9]{1,4}$")); 
+        super.matchers.put("8008", Pattern.compile("^8008[0-9]{8}[0-9]{1,4}")); 
+        super.matchers.put("8008eol", Pattern.compile("^8008[0-9]{8}[0-9]{1,4}$")); 
         super.matchers.put("8009", Pattern.compile("^8009[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,50}[%\\x1D]")); 
         super.matchers.put("8009eol", Pattern.compile("^8009[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,50}$"));  
         super.matchers.put("8010", Pattern.compile("^8010[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%//x1D]"));
