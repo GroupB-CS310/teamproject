@@ -2,7 +2,7 @@
 
 Contributors: Khaleb Groce, Aubrey Guidrey, Cade Carter, Bryson Leonard, David Pitts, and Andrew Brumbeloe 
 
-This project is capable of parsing GS1 strings barcodes.
+This project is capable of parsing GS1 string barcodes.
 These barcodes are found all over the world. GS1 is the standard set of barcodes that people use to help computers read and parse things.
 To look at an exhaustice list of all items that can be parsed, please take a look at pages 135 through 139 of the Specification list below.
 
