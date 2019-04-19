@@ -9,7 +9,3 @@ To look at an exhaustice list of all items that can be parsed, please take a loo
 
 Here is a link to the codes that can be parsed from this program:   
 [link to GS1 Specifications!](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf)
-
-135 aned 139
-of Document
-
