@@ -2,7 +2,7 @@ package teamprojectcs310;
 
 import java.util.HashMap;
 import java.util.regex.Pattern;
-//code change
+
 public class GS1_1X extends GS1 {
 
     public GS1_1X() {
