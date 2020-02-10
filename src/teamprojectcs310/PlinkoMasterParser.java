@@ -61,7 +61,10 @@ public class PlinkoMasterParser {
                 code = code.substring(element.length()).trim();
                 System.out.println(JSONValue.toJSONString(results.get("ai")));
                 System.out.println(JSONValue.toJSONString(results.get("datafield")));
-                System.out.println(JSONValue.toJSONString(results.get("title")));
+                System.out.println(JSONValue.toJSONString(results.get("year")));
+                System.out.println(JSONValue.toJSONString(results.get("month")));
+                System.out.println(JSONValue.toJSONString(results.get("day")));
+               
                 
             }
             
